@@ -7,7 +7,7 @@
 
 from openai import OpenAI # type: ignore
 
-import os
+import os  # in the computer system
 
 api_key = os.getenv("ChatBotKey")
 
