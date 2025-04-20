@@ -7,9 +7,13 @@
 
 from openai import OpenAI # type: ignore
 
+import os
+
+api_key = os.getenv("ChatBotKey")
+
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key = api_key,
 )
 
 chat_history =[]     # variable
